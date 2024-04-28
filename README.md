@@ -18,3 +18,21 @@ but you need to go beyond that.
 ## Runtime Analysis
 
 What is the worst-case big $\Theta$ time complexity of your algorithm?
+
+## My Analysis
+
+The worst case is $\theta(n)$ this is because I just have one for loop that iterates n times. This is much more efficient before because there are no recursive calls to be made every time that we need the factorial. The repetition of the factorial calls is solved by having a factorial variable that is changed during each iteration of the loop.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
