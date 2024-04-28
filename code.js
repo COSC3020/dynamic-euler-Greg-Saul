@@ -1,9 +1,16 @@
-function factorial(n) {
-    if(n === 0) return 1;
-    else return n * factorial(n - 1);
+function dynamic_e(n){
+    if(n === 0) return 1
+    let f = 1
+    let e = 1
+    for(let i = 1; i <= n; i++){
+        f *= i
+        e += 1/f
+    }
+    return e
 }
 
-function e(n) {
-    if(n === 0) return 1;
-    else return 1.0 / factorial(n) + e(n - 1);
-}
+// console.log(e(100))
+
+// console.log(dynamic_e(15))
+// console.log(e(15))
+module.exports = {dynamic_e};
